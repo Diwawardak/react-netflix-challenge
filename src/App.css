@@ -1,38 +1,64 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap');
+
+body {
+  background: black;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1 {
+  display: flex;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
   text-align: center;
+  margin-top: 50px;
+  padding-bottom: 1%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+div#options {
+  display: flex;
+  background-color: rgb(51, 50, 49);
+  height: 9vh;
+  width: 50vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px;
+}
+
+span {
+  display: flex;
   color: white;
+  font-size: 30px;
+  padding: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App {
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn {
+  margin-top: 3%;
+
+}
+
+.button {
+  background-color: rgb(192, 13, 13);
+  padding: 10px 20px;
+  color: white;
 }

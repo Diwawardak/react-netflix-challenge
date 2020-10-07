@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Options from './components/Options'
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div id="container">
+      <h1 id="title">Frequently Asked Questions</h1>
+
+      <Options text="What is Netflix?" />
+      <Options text="How much does Netflix cost?" />
+      <Options text="Where can I watch?" />
+      <Options text="How do I cancel?" />
+      <Options text="What can I watch on Netflix?" />
+      <Options text="How does the free trial work?" />
+
+      <div id="btn">
+        <a className="button"> TRY 30 DAYS FREE > </a>
+      </div>
+
     </div>
-  );
+
+  )
 }
 
 export default App;
